@@ -2,8 +2,8 @@
 
 n = int(input("Введите количество чисел последовательности: "))
 
-sequence = []
-for i in range(1, n+1):
-    sequence.append(pow(1+1/i, i))
+# sequence = []
+# for i in range(1, n+1):
+#     sequence.append(pow(1+1/i, i))
 
-print(f"{n} -> {sum(sequence)}")
+print(f"{n} -> {sum([pow(1+1/i, i) for i in range(1, n+1)])}")
