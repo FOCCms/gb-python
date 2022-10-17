@@ -6,11 +6,7 @@
 # 1115566773322 -> []
 
 def single_elements_counter(n: str):
-    unique = []
-    for i in range(10):
-        if n.count(str(i)) == 1:
-            unique.append(i)
-    return unique
+    return [i for i in range(10) if n.count(str(i)) == 1]
 
 
 print(f"47756688399943 -> {single_elements_counter(str(47756688399943))}")
